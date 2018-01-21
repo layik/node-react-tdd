@@ -1,18 +1,22 @@
 import 'jsdom-global/register'; //at the top of file , even  , before importing react
 //https://github.com/airbnb/enzyme/issues/341#issuecomment-263045603
 import React from 'react';
+// the main tools/environemnt
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 import { spy } from 'sinon';
 
+// test setup stuff
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 
+// trying to get rid of the warning
 import 'raf/polyfill';
 
 import Foo from '../Foo.js';
 
+//spying using sinon
 spy(Foo.prototype, 'componentDidMount');
 spy(Foo.prototype, 'render');
 
