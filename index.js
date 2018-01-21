@@ -1,9 +1,11 @@
 /**
 * @author L Hama
 * Basic index entry
+* This is not a package to renter anythign on browser.
+* It is a Node package only for testing
+* ReactJS components.
 */
 'use-strict'
-import Foo from './Foo.js';
 
 console.log(`
   Hello! TDD again.
