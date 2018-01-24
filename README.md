@@ -11,3 +11,6 @@ There is no file server so
 The repo is here for
 
 `npm test` mainly
+
+# Credits
+https://glebbahmutov.com/blog/unit-testing-cli-programs/
